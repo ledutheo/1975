@@ -25,6 +25,7 @@ Ce dépôt est un hommage respectueux à cette époque.
 | Fichier                        | Type                    | Ambiance 1975                          |
 |--------------------------------|-------------------------|----------------------------------------|
 | `lunar-lander.bas`             | Jeu / Simulation        | Le grand classique des magazines et des universités |
+| `star-trek.bas`                | Jeu (Space Combat)      | Super Star Trek - le jeu mythique des années 70 |
 | `compound-interest.bas`        | Application bancaire    | Programme typique en entreprise et en école d'ingénieur |
 
 ### Lunar Lander
@@ -89,3 +90,95 @@ Parce que oui… c'est exactement comme ça qu'on écrivait à l'époque.
 **Hommage aux pionnières et pionniers du BASIC.**
 
 *1975 n'était pas le Moyen-Âge de l'informatique. C'était déjà un monde.*
+
+---
+
+## Le jeu : Super Star Trek (1975)
+
+`star-trek.bas` est une implémentation dans l'esprit des versions les plus jouées entre 1973 et 1978.
+
+C'est un jeu de stratégie spatial en mode texte où tu commandes l'**USS Enterprise**. Ton but : détruire tous les vaisseaux Klingons avant de manquer d'énergie ou de temps.
+
+Commandes principales :
+- 1 = Short Range Scan
+- 2 = Long Range Scan
+- 3 = Phaser
+- 4 = Photon Torpedoes
+- 5 = Warp (changer de quadrant)
+- 6 = Dock at Starbase (réapprovisionnement)
+- 7 = Status Report
+- 8 = Quit
+
+---
+
+## Jouer sous émulateur sur Linux (recommandé)
+
+Pour une expérience vraiment authentique, le mieux est d'utiliser un émulateur de machine de l'époque.
+
+### Meilleure option facile : Commodore 64 + VICE (sur Linux)
+
+Le Commodore 64 (1982) utilisait une version de BASIC très proche de celle des années 1975. C'est l'une des façons les plus agréables de faire tourner ces programmes aujourd'hui.
+
+#### Installation sur Manjaro / Arch Linux
+
+```bash
+sudo pacman -S vice
+```
+
+#### Lancer le jeu (méthode simple et propre)
+
+1. Installe VICE
+2. Convertis le fichier BASIC en programme Commodore avec `petcat` (inclus avec VICE) :
+
+```bash
+cd ~/1975/programs
+
+# Convertir Star Trek
+petcat -w2 -o star-trek.prg -- star-trek.bas
+
+# (Optionnel) convertir les autres jeux aussi
+petcat -w2 -o lunar-lander.prg -- lunar-lander.bas
+```
+
+3. Lance l'émulateur :
+
+```bash
+x64 -autostart star-trek.prg
+```
+
+Ou sans autostart :
+
+```bash
+x64
+```
+
+Puis dans l'émulateur :
+- Appuie sur **F4** ou va dans `File > Smart attach...` et sélectionne le `.prg`
+- Tape `RUN` et appuie sur Entrée
+
+#### Astuce pour charger rapidement
+
+Dans VICE, tu peux aussi faire un "paste" du code directement, mais la méthode `.prg` est plus propre et authentique.
+
+---
+
+### Autres émulateurs sympas
+
+- **Apple II** : `linapple` ou `applewin` (via Wine)
+- **TRS-80** : `trs80gp` (excellent)
+- **MAME** : pour plein de machines différentes
+
+Mais **VICE + Commodore 64** reste de loin la solution la plus simple et plaisante sur Linux en 2026.
+
+---
+
+### Test rapide sans émulateur (Bywater BASIC)
+
+Si tu veux juste tester le jeu rapidement :
+
+```bash
+sudo pacman -S bwbasic
+bwbasic programs/star-trek.bas
+```
+
+C'est moins "réel" qu'un vrai émulateur, mais ça fonctionne très bien pour tester la logique.
