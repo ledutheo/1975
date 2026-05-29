@@ -27,6 +27,7 @@ Ce dépôt est un hommage respectueux à cette époque.
 | `lunar-lander.bas`             | Jeu / Simulation        | Le grand classique des magazines et des universités |
 | `star-trek.bas`                | Jeu (Space Combat)      | Super Star Trek - le jeu mythique des années 70 |
 | `hammurabi.bas`                | Jeu de gestion          | Hammurabi - l'un des tout premiers jeux informatiques (1968-1975) |
+| `banque-1975.cob`              | Traitement bancaire     | Programme COBOL typique des banques françaises dans les années 70 |
 | `compound-interest.bas`        | Application bancaire    | Programme typique en entreprise et en école d'ingénieur |
 
 ### Lunar Lander
@@ -44,6 +45,39 @@ Ce type de programme était extrêmement courant dans les années 70 :
 - Calculs de prêts immobiliers
 
 Le BASIC était l'outil de productivité de beaucoup d'analystes et d'ingénieurs avant l'arrivée massive des tableurs (VisiCalc arrivera seulement en 1979).
+
+### Programme COBOL Bancaire (1975)
+
+`banque-1975.cob` est écrit dans le style des programmes COBOL que les informaticiennes et informaticiens produisaient dans les banques françaises au milieu des années 1970.
+
+À cette époque :
+- La très grande majorité des applications bancaires critiques étaient écrites en **COBOL**.
+- Les traitements se faisaient presque exclusivement en **batch** la nuit.
+- On lisait des fichiers de mouvements (dépôts, retraits, virements), on mettait à jour les "fichiers des comptes" et on produisait des états sur papier (listings).
+
+C'est exactement le genre de programme que ta mère a très probablement écrit ou maintenu.
+
+#### Comment compiler et exécuter ce programme aujourd'hui
+
+Sur Manjaro / Arch :
+
+```bash
+sudo pacman -S gnucobol
+```
+
+Puis :
+
+```bash
+cd ~/1975/programs
+
+# Compiler
+cobc -x banque-1975.cob -o banque-1975
+
+# Exécuter
+./banque-1975
+```
+
+Le programme va lire un petit fichier de mouvements exemple et générer un état des soldes (`ETAT-SOLDES.TXT`), exactement comme les vieux programmes bancaires le faisaient.
 
 ### Hammurabi
 
