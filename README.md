@@ -26,6 +26,7 @@ Ce dépôt est un hommage respectueux à cette époque.
 |--------------------------------|-------------------------|----------------------------------------|
 | `lunar-lander.bas`             | Jeu / Simulation        | Le grand classique des magazines et des universités |
 | `star-trek.bas`                | Jeu (Space Combat)      | Super Star Trek - le jeu mythique des années 70 |
+| `hammurabi.bas`                | Jeu de gestion          | Hammurabi - l'un des tout premiers jeux informatiques (1968-1975) |
 | `compound-interest.bas`        | Application bancaire    | Programme typique en entreprise et en école d'ingénieur |
 
 ### Lunar Lander
@@ -43,6 +44,16 @@ Ce type de programme était extrêmement courant dans les années 70 :
 - Calculs de prêts immobiliers
 
 Le BASIC était l'outil de productivité de beaucoup d'analystes et d'ingénieurs avant l'arrivée massive des tableurs (VisiCalc arrivera seulement en 1979).
+
+### Hammurabi
+
+**Hammurabi** (aussi appelé "The Sumer Game") est l'un des jeux informatiques les plus anciens et les plus influents de l'histoire.
+
+- Créé à l'origine en **1968** par Doug Dyment en FOCAL.
+- Très vite porté en BASIC et massivement diffusé dans les universités américaines entre 1970 et 1976.
+- C'est un jeu de **gestion économique** : tu diriges la cité de Sumer, tu dois nourrir ton peuple, gérer les récoltes, les rats, les immigrations et les épidémies.
+
+Beaucoup de personnes qui ont appris à programmer dans les années 70 ont commencé par taper ou modifier Hammurabi. C'est un vrai morceau d'histoire du jeu vidéo et de l'informatique personnelle.
 
 ## Comment exécuter ces programmes aujourd'hui ?
 
