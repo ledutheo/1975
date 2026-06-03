@@ -29,6 +29,9 @@ Ce dépôt est un hommage respectueux à cette époque.
 | `hammurabi.bas`                | Jeu de gestion          | Hammurabi - l'un des tout premiers jeux informatiques (1968-1975) |
 | `banque-1975.cob`              | Traitement bancaire     | Programme COBOL typique des banques françaises dans les années 70 |
 | `compound-interest.bas`        | Application bancaire    | Programme typique en entreprise et en école d'ingénieur |
+| `amortissement.bas`            | Bancaire / Crédit (sérieux) | **Tableau d'amortissement complet** - l'outil des services prêts |
+| `calendrier-1975.bas`          | Utilitaire / Bureau (stylé) | Calendrier perpétuel + jour de la semaine (Zeller) |
+| `registre-1975.bas`            | Gestion personnelle (très sérieux) | Registre de compte / chéquier - le quotidien de tout le monde |
 
 ### Lunar Lander
 
@@ -143,6 +146,45 @@ Parce que oui… c'est exactement comme ça qu'on écrivait à l'époque.
 `star-trek.bas` est une implémentation dans l'esprit des versions les plus jouées entre 1973 et 1978.
 
 C'est un jeu de stratégie spatial en mode texte où tu commandes l'**USS Enterprise**. Ton but : détruire tous les vaisseaux Klingons avant de manquer d'énergie ou de temps.
+
+## Nouveaux programmes ajoutés (développement du dépôt)
+
+### Amortissement (amortissement.bas)
+
+Outil **très sérieux** des services crédits des banques des années 70.
+
+Le programme demande le montant du prêt, le taux et la durée, calcule la mensualité, puis imprime le **tableau d'amortissement complet** :
+
+- Numéro d'échéance
+- Partie intérêts / partie capital
+- Solde restant dû
+
+C'était le document que le banquier sortait pour expliquer au client exactement combien il allait payer en intérêts sur 15 ou 20 ans. Imprimé sur listing, plié, remis en main propre.
+
+### Calendrier Perpétuel (calendrier-1975.bas)
+
+Programme **stylé et utile** que tout le monde voulait avoir.
+
+- Calcul du jour de la semaine pour n'importe quelle date (algorithme de Zeller, très connu à l'époque)
+- Impression d'un beau calendrier mensuel format listing (DIM LUN MAR ... SAM)
+
+Les secrétaires, les services du personnel, les notaires et les mères de famille qui géraient les échéances l'utilisaient tous les jours.
+
+### Registre de Compte (registre-1975.bas)
+
+L'outil **le plus sérieux et le plus personnel**.
+
+C'est l'équivalent numérique du "carnet de chèques" ou du "registre de banque" papier que tout le monde tenait à la main en 1975 :
+
+- Saisie de mouvements (date + libellé + montant + ou -)
+- Affichage du registre complet
+- Solde instantané
+- Relevé du mois (total entrées / sorties)
+- "Nouveau registre" quand on change de carnet
+
+C'est probablement le programme que ta mère aurait le plus utilisé au quotidien pour suivre les finances du foyer.
+
+
 
 Commandes principales :
 - 1 = Short Range Scan
