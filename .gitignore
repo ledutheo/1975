@@ -1,2 +1,5 @@
-# Nothing to ignore for BASIC source files
-# Keeping this for future expansions
+# Binaires et sorties COBOL générés localement
+programs/banque-1975
+programs/releve-mensuel
+programs/*.TXT
+programs/*.prg

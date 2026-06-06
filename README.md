@@ -28,6 +28,7 @@ Ce dépôt est un hommage respectueux à cette époque.
 | `star-trek.bas`                | Jeu (Space Combat)      | Super Star Trek - le jeu mythique des années 70 |
 | `hammurabi.bas`                | Jeu de gestion          | Hammurabi - l'un des tout premiers jeux informatiques (1968-1975) |
 | `banque-1975.cob`              | Traitement bancaire     | Programme COBOL typique des banques françaises dans les années 70 |
+| `releve-mensuel.cob`           | Relevé de compte        | Édition mensuelle du releve client — batch COBOL des années 70    |
 | `compound-interest.bas`        | Application bancaire    | Programme typique en entreprise et en école d'ingénieur |
 | `amortissement.bas`            | Bancaire / Crédit (sérieux) | **Tableau d'amortissement complet** - l'outil des services prêts |
 | `calendrier-1975.bas`          | Utilitaire / Bureau (stylé) | Calendrier perpétuel + jour de la semaine (Zeller) |
@@ -81,6 +82,19 @@ cobc -x banque-1975.cob -o banque-1975
 ```
 
 Le programme va lire un petit fichier de mouvements exemple et générer un état des soldes (`ETAT-SOLDES.TXT`), exactement comme les vieux programmes bancaires le faisaient.
+
+### Relevé mensuel de compte (releve-mensuel.cob)
+
+Programme COBOL complémentaire : édition du **relevé mensuel** d'un compte client à partir du même fichier `MOUVEMENTS.TXT`.
+
+```bash
+cd ~/1975/programs
+cobc -x releve-mensuel.cob -o releve-mensuel
+./releve-mensuel
+cat RELEVE-MENSUEL.TXT
+```
+
+C'est le document que la banque envoyait chaque mois par courrier — imprimé sur listing, plié, mis sous enveloppe.
 
 ### Hammurabi
 
