@@ -72,7 +72,7 @@ sudo pacman -S gnucobol
 Puis :
 
 ```bash
-cd ~/1975/programs
+cd ~/github/1975/programs
 
 # Compiler
 cobc -x banque-1975.cob -o banque-1975
@@ -88,7 +88,7 @@ Le programme va lire un petit fichier de mouvements exemple et générer un éta
 Programme COBOL complémentaire : édition du **relevé mensuel** d'un compte client à partir du même fichier `MOUVEMENTS.TXT`.
 
 ```bash
-cd ~/1975/programs
+cd ~/github/1975/programs
 cobc -x releve-mensuel.cob -o releve-mensuel
 ./releve-mensuel
 cat RELEVE-MENSUEL.TXT
@@ -232,7 +232,7 @@ sudo pacman -S vice
 2. Convertis le fichier BASIC en programme Commodore avec `petcat` (inclus avec VICE) :
 
 ```bash
-cd ~/1975/programs
+cd ~/github/1975/programs
 
 # Convertir Star Trek
 petcat -w2 -o star-trek.prg -- star-trek.bas
